@@ -69,13 +69,15 @@ const StyledInput = styled.input`
     border-radius: 1rem;
     text-align: center;
     @media only screen and (max-width: 480px) {
-        width: 45%;
+        width: 30%;
+        max-width: 30%;
     }
     @media only screen and (min-width: 481px) and (max-width: 768px) {
-            width: 55%;
+        width: 55%;
+        max-width: 55%;
     }
     @media only screen and (min-width: 769px) and (max-width: 1200px){
-            width: 55%;
+        max-width: 55%;
     }
 `
 
@@ -118,8 +120,7 @@ function Timer() {
         <StyledTimerContainer>
             <StyledCounter>{formatTime(timer)}</StyledCounter>
             <StyledContainer>
-                <Button funct={handleStart} text={'Start'} disabled={!running ? false : true} />
-                <div style={{ display: 'flex', width: '70%', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
+                <div style={{ display: 'flex', width: '70%', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}>
                     <Button funct={() => handlePreset(setPreset10Min)} text={'10 MIN'} />
                     <Button funct={() => handlePreset(setPreset15Min)} text={'15 MIN'} />
                     <Button funct={() => handlePreset(setPreset30Min)} text={'30 MIN'} />
@@ -131,6 +132,7 @@ function Timer() {
                     }} />
                 </div>
                 <Button funct={() => { dispatch(stopTimer()), clearInterval(id.current) }} text={'Reset'} disabled={!running ? true : false} />
+                    <Button funct={handleStart} text={'Start'} disabled={!running ? false : true} />
                 <Button funct={() => { dispatch(pauseTimer()), clearInterval(id.current) }} text={'Pause'} disabled={!running ? true : false} />
             </StyledContainer>
         </StyledTimerContainer>
