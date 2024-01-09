@@ -77,6 +77,7 @@ const StyledInput = styled.input`
         max-width: 55%;
     }
     @media only screen and (min-width: 769px) and (max-width: 1200px){
+        width: 55%;
         max-width: 55%;
     }
 `
