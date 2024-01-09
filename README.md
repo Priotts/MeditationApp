@@ -1,8 +1,29 @@
-# React + Vite
+## Meditation Online App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple [meditation application](https://meditationapponline.netlify.app/)   with sounds and timer
+## Description
+The application allows the user to set a timer (with presets already defined or customisable) to start the meditation session, accompanied with different sounds
+## Project features
+- The application is developed with React
+- Styled-components for css style
+- Routing system 
+- Redux
+## Installation
+- Clone the repository
 
-Currently, two official plugins are available:
+```bash
+    git clone https://github.com/Priotts/MeditationApp.git
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Type 
+
+```bash
+    npm install
+```
+
+
+- Start a demo by typing
+```bash
+    npm run dev
+```
+
