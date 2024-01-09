@@ -84,6 +84,7 @@ const StyledLogoContainer = styled(motion.div)`
 }
 `
 
+
 function MeditationApp() {
     return (
         <StyledContainer>
@@ -98,11 +99,13 @@ function MeditationApp() {
             </StyledLeftCol>
             <StyledCenterCol>
                 <StyledLogoContainer
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 0.5 }}
+                    initial={{ opacity: 0.5 }}
+                    animate={{ opacity: 1 }}
                     transition={{ delay: 0.1 }}
                 >
-                    <img src={logo} alt="Logo" width={100} />
+                    <a href="https://github.com/Priotts/MeditationApp" target="_blank">
+                        <img src={logo} alt="Logo" width={100} />
+                    </a>
                 </StyledLogoContainer>
 
                 <Timer />

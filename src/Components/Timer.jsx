@@ -15,7 +15,7 @@ const StyledTimerContainer = styled.div`
         display: flex;
         height: 55%;
         justify-content: flex-start;
-}
+    }
     @media only screen and (min-width: 481px) and (max-width: 768px) {
         display: flex;
         height: 55%;
@@ -26,7 +26,7 @@ const StyledTimerContainer = styled.div`
         display: flex;
         height: 65%;
         justify-content: flex-start;
-}
+    }
 
 `
 const StyledContainer = styled.div`
@@ -36,13 +36,13 @@ const StyledContainer = styled.div`
     align-items: center;
     @media only screen and (max-width: 480px) {
         display: flex;
-}
+    }
     @media only screen and (min-width: 481px) and (max-width: 768px) {
         display: flex;
     }
     @media only screen and (min-width: 769px) and (max-width: 1200px){
         display: flex;
-}
+    }
 `
 const StyledCounter = styled.div`
     display: flex;
@@ -52,7 +52,7 @@ const StyledCounter = styled.div`
     font-size: 5rem;
     @media only screen and (max-width: 480px) {
         font-size: 3rem;
-}
+    }
     @media only screen and (min-width: 481px) and (max-width: 768px) {
         font-size: 5rem;
     }
@@ -120,7 +120,7 @@ function Timer() {
         <StyledTimerContainer>
             <StyledCounter>{formatTime(timer)}</StyledCounter>
             <StyledContainer>
-                <div style={{ display: 'flex', width: '70%', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}>
+                <div style={{ display: 'flex', width: '70%', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center'}}>
                     <Button funct={() => handlePreset(setPreset10Min)} text={'10 MIN'} />
                     <Button funct={() => handlePreset(setPreset15Min)} text={'15 MIN'} />
                     <Button funct={() => handlePreset(setPreset30Min)} text={'30 MIN'} />
